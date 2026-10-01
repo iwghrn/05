@@ -7,14 +7,11 @@ int main(void)
     printf("input a integer :");
     scanf("%i", &num);
 
-    if (num > 0)
-        printf("It's positive number.\n");
-
-    else if (num < 0)
-        printf("It's negative number.\n");
+    if (num >= 0)
+        printf("Absolute value is %d.\n", num);
 
     else
-        printf("It's 0.\n");
+        printf("Absolute value is %d.\n", -num);
 
     return 0;
 }
